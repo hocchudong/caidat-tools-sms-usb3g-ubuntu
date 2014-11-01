@@ -21,7 +21,7 @@ https://wiki.ubuntu.com/NetworkManager/Hardware/3G
 
 - Bật máy ảo và lựa chọn cho máy ảo kết nối được với USB (cần đảm bảo nước này)
 
-<img src=http://i.imgur.com/g6jzmiu.png width="60%" height="60%" border="1">
+<img src=http://i.imgur.com/g6jzmiu.png width="80%" height="80%" border="1">
 #### 2.2 Thực hiện cài các gói cần thiết
 - Kiểm tra xem USB đã nhận hay chưa, đối với các USB mà Ubuntu hỗ trợ ở link trên thì dùng lệnh dưới để kiểm tra
 ```sh
@@ -29,7 +29,7 @@ lsusb
 ```
 Kết quả như hình dưới
 
-<img src=http://i.imgur.com/hbDBsrh.png width="60%" height="60%" border="1">
+<img src=http://i.imgur.com/hbDBsrh.png width="80%" height="80%" border="1">
 
 - Thực hiện cài đặt gói  usb-modeswitch gsm-utils với quyền `root`. Trong đó gói  usb-modeswitch dùng để kết nối tới USB trong Linux còn gói gms-utils dùng để thực hiện gửi SMS.
 ```sh
@@ -37,7 +37,9 @@ apt-get update
 apt-get install usb-modeswitch gsm-utils -y
 ```
 
-- Kiểm tra xem USB đã được kết nối thành công hay chưa bằng cách dùng lệnh tail để kiểm tra log. Lúc này đối với máy ảo bạn cần thực hiện thao tác disconnect USB và kết nối lại giống hình ở Bước 2.1, còn đối với máy thật thì rút USB ra cắm lại
+Kiểm tra xem USB đã được kết nối thành công hay chưa bằng cách dùng lệnh `tail` để kiểm tra log. Lúc này đối với máy ảo bạn cần thực hiện thao tác disconnect USB và kết nối lại giống hình này ở Bước 2.1 http://i.imgur.com/g6jzmiu.png 
+
+còn đối với máy thật thì rút USB ra cắm lại
 
 ```sh
 tail -f /var/log/syslog
