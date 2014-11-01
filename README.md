@@ -36,9 +36,10 @@ Cũng trong lúc "Lý Bí" mình tìm được link ở dưới giới thiệu �
 
 ### 1. Các bước chuẩn bị
 
-> 01 USB 3G. Các USB được hỗ trợ bởi UBUNTU có thể tham khảo ở đây 
+>* 01 USB 3G. Các USB được hỗ trợ bởi UBUNTU có thể tham khảo ở đây 
 https://wiki.ubuntu.com/NetworkManager/Hardware/3G
-> Một máy chủ cài đặt Ubuntu 12.04 Server 64 bit. Có thể là máy ảo cài trên VMware WorkStation.
+
+>* Một máy chủ cài đặt Ubuntu 12.04 Server 64 bit. Có thể là máy ảo cài trên VMware WorkStation.
 
 ### 2. Các bước thực hiện
 #### 2.1. Chuẩn bị máy và kết nối với USB sau khi cắm
@@ -121,8 +122,8 @@ Test chuc nang SMS: Nội dung gửi
 ```
 
 ### 3. Liên hệ
-Email: tcvn1985@gmail.com
-Skype: tu0ng_c0ng
+- Email: tcvn1985@gmail.com
+- Skype: tu0ng_c0ng
 
 ### 4. Cám ơn
 Nam | Tiến
