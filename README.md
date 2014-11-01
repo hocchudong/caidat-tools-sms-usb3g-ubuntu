@@ -1,27 +1,9 @@
 Hướng dẫn cài SMS Gateway trong Ubuntu Server 12.04
 =============================
 
-**MỤC LỤC**  *Tạo bởi [DocToc](http://doctoc.herokuapp.com/)*
 
-[Hướng dẫn cài SMS Gateway trong Ubuntu Server 12.04](#user-content-h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-sms-gateway-trong-ubuntu-server-1204)
 
-[1. Các bước chuẩn bị](#user-content-1-c%C3%A1c-b%C6%B0%E1%BB%9Bc-chu%E1%BA%A9n-b%E1%BB%8B)
-
-[2. Các bước thực hiện](#user-content-2-c%C3%A1c-b%C6%B0%E1%BB%9Bc-th%E1%BB%B1c-hi%E1%BB%87n)
-
-[2.1. Chuẩn bị máy và kết nối với USB sau khi cắm](#user-content-21-chu%E1%BA%A9n-b%E1%BB%8B-m%C3%A1y-v%C3%A0-k%E1%BA%BFt-n%E1%BB%91i-v%E1%BB%9Bi-usb-sau-khi-c%E1%BA%AFm)
-
-[2.2 Thực hiện cài các gói cần thiết](#user-content-22-th%E1%BB%B1c-hi%E1%BB%87n-c%C3%A0i-c%C3%A1c-g%C3%B3i-c%E1%BA%A7n-thi%E1%BA%BFt)
-
-[Thử gửi tin nhắn bằng dòng lệnh](#user-content-th%E1%BB%AD-g%E1%BB%ADi-tin-nh%E1%BA%AFn-b%E1%BA%B1ng-d%C3%B2ng-l%E1%BB%87nh)
-
-[Mở rộng của SMS Gateway để kết hợp với các ứng dụng khác](#user-content-m%E1%BB%9F-r%E1%BB%99ng-c%E1%BB%A7a-sms-gateway-%C4%91%E1%BB%83-k%E1%BA%BFt-h%E1%BB%A3p-v%E1%BB%9Bi-c%C3%A1c-%E1%BB%A9ng-d%E1%BB%A5ng-kh%C3%A1c)
-
-[Liên hệ](#user-content-li%C3%AAn-h%E1%BB%87)
-
-[Cám ơn](#user-content-c%C3%A1m-%C6%A1n)
-
-[Tham khảo](#user-content-tham-kh%E1%BA%A3o)
+### Giới thiệu
 
 Một chiều thứ 7 cuối thu - lang thang và mải mê tìm kiếm thông tin để phục vụ nhu cầu gửi SMS thông qua USB 3G được kết nối với 1 máy chủ Linux.
 
@@ -30,12 +12,14 @@ Sau một hồi tìm kiếm mình được thầy "MạngNV" và các bạn bè 
 Cũng trong lúc "Lý Bí" mình tìm được link ở dưới giới thiệu ở dưới về "gsm-utils" và mình đã thử, kết quả là trên cả tuyệt vời, nay mình tổng hợp lại các bước làm và chú ý ở đây để cho ai đó có nhu cầu dùng lại.
 
 ### 1. Các bước chuẩn bị
+
 > 01 USB 3G. Các USB được hỗ trợ bởi UBUNTU có thể tham khảo ở đây 
 https://wiki.ubuntu.com/NetworkManager/Hardware/3G
 > Một máy chủ cài đặt Ubuntu 12.04 Server 64 bit. Có thể là máy ảo cài trên VMware WorkStation.
 
 ### 2. Các bước thực hiện
 #### 2.1. Chuẩn bị máy và kết nối với USB sau khi cắm
+
 - Ở đây mình cài Ubuntu 12.04 lên VMware Workstations (nếu bạn cài trên máy thật thì không cần làm động tác dưới đây và chuyển sang bước 2.2 luôn)
 - Tất nhiên máy ảo đã được cài đặt và USB được cắm vào máy thật và đảm bảo máy ảo được có lựa chọn kết nối USB như hình dưới.
 
@@ -44,7 +28,9 @@ https://wiki.ubuntu.com/NetworkManager/Hardware/3G
 - Bật máy ảo và lựa chọn cho máy ảo kết nối được với USB (cần đảm bảo nước này)
 
 <img src=http://i.imgur.com/g6jzmiu.png width="80%" height="80%" border="1">
+
 #### 2.2 Thực hiện cài các gói cần thiết
+
 - Kiểm tra xem USB đã nhận hay chưa, đối với các USB mà Ubuntu hỗ trợ ở link trên thì dùng lệnh dưới để kiểm tra
 ```sh
 lsusb
@@ -95,7 +81,7 @@ GSM modem (1-port) converter now attached to ttyUSBX
 Trong đó USBX là USB0, USB1 hoặc USB2.
 ```
 
-#### Thử gửi tin nhắn bằng dòng lệnh
+#### 2.3. Thử gửi tin nhắn bằng dòng lệnh
 - Lúc này bạn đã có thể gửi tin nhắn trong CLI tới số điện thoại mà bạn muốn như sau
 ```sh
 echo "Test chuc nang SMS" | gsmsendsms -d /dev/ttyUSB0 -b 19200 091234940
@@ -106,19 +92,19 @@ Test chuc nang SMS: Nội dung gửi
 ```
 
 
-#### Mở rộng của SMS Gateway để kết hợp với các ứng dụng khác
+#### 2.4. Mở rộng của SMS Gateway để kết hợp với các ứng dụng khác
 ```sh
 Đang soạn
 ```
 
-### Liên hệ
+### 3. Liên hệ
 Email: tcvn1985@gmail.com
 Skype: tu0ng_c0ng
 
-### Cám ơn
+### 4. Cám ơn
 Nam | Tiến
 
-### Tham khảo
+### 5. Tham khảo
 http://hashtips.wordpress.com/2013/04/12/send-sms-using-a-usb-modem-and-ubuntu-12-04/
 http://packages.ubuntu.com/lucid/gsm-utils
  
