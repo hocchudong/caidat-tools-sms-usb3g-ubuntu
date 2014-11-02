@@ -117,13 +117,13 @@ Test chuc nang SMS: Nội dung gửi
 
 
 #### 2.4. Mở rộng của SMS Gateway để kết hợp với các ứng dụng khác
-Chương trình gửi SMS bằng python sau khi đã cài xong gsmsend ultils. Sử dụng lại code của pythonvietnam.info
+##### 2.4.1 Chương trình gửi SMS bằng python sau khi đã cài xong gsmsend ultils. Sử dụng lại code của pythonvietnam.info
 
 ```sh
 https://github.com/hocchudong/caidat-tools-sms-usb3g-ubuntu/blob/master/codesms/python-sms.py
 ```
 
-Chương trình gửi SMS bằng python cho nhiều số điện thoại đồng thời:
+##### 2.4.2 Chương trình gửi SMS bằng python cho nhiều số điện thoại đồng thời:
 ```sh
 Đang làm
 ```
