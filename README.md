@@ -1,6 +1,6 @@
 Hướng dẫn cài SMS Gateway trong Ubuntu Server 12.04
 =============================
-
+----
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 [Hướng dẫn cài SMS Gateway trong Ubuntu Server 12.04](#user-content-h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-sms-gateway-trong-ubuntu-server-1204)
